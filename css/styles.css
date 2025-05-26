@@ -1,0 +1,195 @@
+/* generales */
+body {
+    width: 100%;
+    background-color: rgb(220, 204, 235);
+}
+
+h1, h2, p {
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+p {
+    font-weight: bold;
+}
+
+/* header*/
+header {
+    background-color: rgb(162, 131, 192);
+    
+}
+
+#dressCodeTitle {
+   text-align: center; 
+   font-size: 3rem;
+   color: rgb(46, 12, 77); 
+   margin-top: 0;
+   padding: 0;
+}
+
+nav {
+    background-color: rgb(152, 111, 192);
+    font-family: "Cascadia Code", sans-serif;
+    position: static;
+    margin: 1rem;
+}
+
+header ul {
+    height: 4rem;
+    display: flex;
+    gap: 20px;
+    justify-content: end;margin: 0;
+    flex-wrap: wrap;
+}
+
+#logoImagen {
+    width: 100px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#videoHeader {
+    margin-left: 30%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/*main*/
+
+main {
+    margin-left: 10px;
+}
+
+
+.listasVarias {
+    font-family: "Cascadia Code", sans-serif;
+}
+
+ #botonEnviar {
+    border: 2px solid black;
+    font-family: "Cascadia Code", sans-serif;
+    font-style: bold;
+    background-color: rgb(162, 131, 192);
+    padding: 5px;
+    margin: 5px;
+} 
+
+label {
+    font-family: "Cascadia Code", sans-serif;
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+}
+
+/*footer*/
+
+footer {
+    background-color: rgb(85, 73, 97);
+}
+
+.fa-instagram {
+   font-weight: bold;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+iframe {
+    height: 10rem;
+    width: 10rem;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(46, 12, 77); 
+}
+
+/*index*/
+#indexListasVideo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+}
+#videoPromo {
+    padding: 2rem;
+}
+
+li {
+    padding: 2px;
+}
+
+/*nosotros*/
+#nosotrosMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#fotoNosotros {
+    width: 30rem;
+    padding: 20px;
+}
+
+
+
+/*productos*/
+
+.fotosRemeras {
+    width: 10rem;
+    padding: 20px;
+}
+
+#remerasLisasHombre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#remerasLisasMujer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#remerasEstampadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*contacto*/
+#listaContacto {
+    max-width: 15.5rem;
+}
+
+
+
+#remerasContacto {
+    width: 20rem;
+    padding: 2rem;
+}
+
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
