@@ -215,7 +215,8 @@ li {
 
 /*productos*/
 
-/* .fotosRemeras {
+/*
+.fotosRemeras {
     width: 10rem;
     padding: 20px;
 }
@@ -248,8 +249,7 @@ li {
 
 
 .botonComprar {
-    max-width: 70px;
-    max-height: 50px;
+    padding: 2rem;
     font-family: 'Courier New', Courier, monospace;  
     font-weight: bold ;
     background-color: #460b3e3a;
@@ -281,30 +281,13 @@ li {
     justify-content: center;
     gap: 1rem;
 }
-*/
 
-/*.contenedorCategoria {
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid #460b3e;
-    margin: 10px;
-    border-radius: 5px;
-    background-color: #6f819175;
-}
-
-.contenedorCategoria img {
-    width: 10rem;
-    padding: 20px;
-}
-*/
-
-/* Tus estilos existentes para los productos */
 .boxRemeras {
     width: 220px;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #460b3e;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #6f81917c;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
@@ -319,41 +302,79 @@ li {
     cursor: pointer;
 }
 
-.fotosRemeras { /* Cambié de .boxRemeras img a .fotosRemeras por tu clase */
+.fotosRemeras { 
     max-width: 100%;
-    height: 200px; /* Ejemplo de alto fijo para unificar */
-    object-fit: contain; /* Para que las imágenes no se deformen */
+    height: 200px; 
+    object-fit: contain; 
     border-radius: 4px;
     margin-bottom: 10px;
 }
 
-.boxPrecio { /* Contenedor para el precio y el botón */
+.boxPrecio { 
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.boxPrecio p { /* El párrafo del precio */
+.boxPrecio p { 
     font-size: 1.2em;
     color: #555;
     margin: 5px 0;
 }
+*/
 
-.botonComprar { /* El botón de comprar */
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+     font-family: 'Courier New', Courier, monospace; 
+}
+
+.productos img {
+    width: 10rem;
+    height: 13rem;
+    padding: 20px;
+}
+
+.productos button {
+    background-color: #460b3e54;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.productos button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
 }
 
-.botonComprar:hover {
-    background-color: #0056b3;
+.productos span {
+    padding: 5px;
+
 }
+
+.contenedorCategoria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.carritoCompras {
+     font-family: 'Courier New', Courier, monospace; 
+     text-align: center;
+     border: 2px solid  #460b3e;
+     border-radius: 8px;
+     padding: 10px;
+     margin: 10px;
+     background-color: #6f81916e;
+}
+ 
+
+
+
 /*contacto*/
 #listaContacto {
     max-width: 15.5rem;
