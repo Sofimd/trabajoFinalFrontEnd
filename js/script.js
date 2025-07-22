@@ -1,101 +1,109 @@
 console.log("Hola")
-let productos = [
+
+
+const productos = [
     {
+        id: "01",
         nombre: "remera blanca 1",
-        tieneDescuento: true;
-        categoria: "lisa",
-        sexo: "hombre"
+        imagen: "imagenes/remeraHombreBlanca.jpg",
+        categoria: "hombre",
+        precio: 10000
+
     },
 
     {
+        id: "02",
         nombre: "remera gris 1",
-        tieneDescuento: false,
-        categoria: "lisa",
-        sexo: "hombre"
+        imagen: "imagenes/remeraHombreGris.jpg",
+        categoria: "hombre",
+        precio: 12000
+
     },
 
     {
+        id: "03",
         nombre: "remera negra 1",
-        tieneDescuento: true,
-        categoria: "lisa",
-        sexo: "hombre"
+        imagen: "imagenes/remeraHombreNegra.jpg",
+        categoria: "hombre",
+        precio: 10000
+
     },
 
     {
+        id: "04",
         nombre: "remera verde 1",
-        tieneDescuento: false,
-        categoria: "lisa",
-        sexo: "hombre"
+        imagen: "imagenes/remeraHombreVerde.jpg",
+        categoria: "hombre",
+        precio: 12000
     },
 
     {
-
+        id: "05",
         nombre: "remera blanca 2",
-        tieneDescuento: true,
-        categoria: "lisa",
-        sexo: "mujer"
+        imagen: "imagenes/remeraMujerBlanca.jpg",
+        categoria: "mujer",
+        precio: 10000
     },
 
     {
+        id: "06",
         nombre: "remera gris 2",
-        tieneDescuento: false,
-        categoria: "lisa",
-        sexo: "mujer"
+        imagen: "imagenes/remeraMujerGris.jpg",
+        categoria: "mujer",
+        precio: 12000
     },
 
     {
+        id: "07",
         nombre: "remera negra 2",
-        tieneDescuento: true,
-        categoria: "lisa",
-        sexo: "mujer"
+        imagen: "imagenes/remeraMujerNegra.jpg",
+        categoria: "mujer",
+        precio: 10000
     },
 
     {
+        id: "08",
         nombre: "remera verde 2",
-        tieneDescuento: false,
-        categoria: "lisa",
-        sexo: "mujer"
+        imagen: "imagenes/remeraMujerVerde.jpg",
+        categoria: "mujer",
+        precio: 12000
     },
 
     {
+        id: "09",
         nombre: "remera estampa 1",
-        tieneDescuento: true,
-        categoria: "estampada",
-        sexo: "hombre"
+        imagen: "imagenes/remeraHombreEstampa1.webp",
+        categoria: "unisex",
+        precio: 15000
     },
 
     {
+        id: "10",
         nombre: "remera estampa 2",
-        tieneDescuento: false,
-        categoria: "estampada",
-        sexo: "mujer"
-    }
-] 
+        imagen: "imagenes/remeraMujerEstampa.webp",
+        categoria: "unisex",
+        precio: 15000
+    },
+];
 
-let todosLosProductos = document.getElementById("todosLosProductos");
-for (let contador = 0; contador < productos.lenght;contador++) {
-    todosLosProductos.innerHTML = todosLosProductos.innerHTML + "Producto" + (contador + 1) 
-    + "- nombre: " + productos[contador].nombre + "- descuento: " + productos[contador].tieneDescuento + "<br>"; 
-} 
+function agregarProductos() {
+    const divProductos = document.querySelector(".productos");
 
-/* for (let i = 0; i < productos.length; i++) {
-    const producto = productos[i];
+    for (let i = 0; i < productos.length; i++) {
+        const producto = productos[i];
 
-    
-    divProductos.insertAdjacentHTML("afterbegin",
-
-        `
-        <div class="producto">
-            <img src=${producto.imagen}" alt="${producto.nombre}">
-            <div class="producto-contenido">
-                <h4>${producto.nombre}</h4>
-                <span>Código: ${producto.id}</span>
-                <span>Precio: $ ${producto.precio}</span>
-                <button class="btn-comprar" type="button" data-id="${producto.id}">Comprar</button>
+        divProductos.insertAdjacentHTML("afterbegin",
+            `
+            <div class="producto">
+                <img src="${producto.imagen}" alt="${producto.nombre}">
+                <div class="producto-contenido">
+                    <h4>${producto.nombre}</h4>
+                    <span>Código: ${producto.id}</span>
+                    <span>Precio: $ ${producto.precio}</span>
+                    <button class="btn-comprar" type="button" data-id="${producto.id}">Comprar</button>
+                </div>
             </div>
-        </div>
-        `    
-    );
+            `
+        );
+    }    
 }
-
-*/
