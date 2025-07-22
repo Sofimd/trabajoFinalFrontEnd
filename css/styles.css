@@ -31,6 +31,7 @@ nav {
     font-family: "Cascadia Code", sans-serif;
     position: static;
     margin: 1rem;
+
 }
 
 header ul {
@@ -48,7 +49,10 @@ header ul {
 }
 
 #videoHeader {
-    margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -136,9 +140,8 @@ li {
 
 /*nosotros*/
 #nosotrosMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #fotoNosotros {
