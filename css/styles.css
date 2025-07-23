@@ -15,6 +15,7 @@ p {
 /* header*/
 header {
     background-color: rgb(162, 131, 192);
+    width: 100%;
     
 }
 
@@ -23,11 +24,11 @@ header {
    font-size: 3rem;
    color: rgb(46, 12, 77); 
    margin-top: 0;
-   padding: 0;
+   padding: 5px;
 }
 
 nav {
-    background-color: rgb(152, 111, 192);
+    background-color: rgba(151, 111, 192, 0.329);
     font-family: "Cascadia Code", sans-serif;
     position: static;
     margin: 1rem;
@@ -127,13 +128,19 @@ footer a {
 
 /*index*/
 #indexListasVideo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
+
+.listas {
+    padding: 30px;
+}
+
 #videoPromo {
     padding: 2rem;
+    width: 200px;
 }
 
 li {
