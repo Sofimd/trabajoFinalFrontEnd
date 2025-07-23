@@ -330,7 +330,9 @@ li {
 .productos {
     display: flex;
     flex-wrap: wrap;
-     font-family: 'Courier New', Courier, monospace; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 .productos img {
