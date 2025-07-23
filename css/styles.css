@@ -148,13 +148,17 @@ li {
 }
 
 /*nosotros*/
-#nosotrosMain {
+
+.divNosotros {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+
 #fotoNosotros {
-    width: 30rem;
+    width: 20rem;
+    height: 20rem;
     padding: 20px;
 }
 
@@ -224,6 +228,8 @@ li {
 .fotosRemeras {
     width: 10rem;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /*productos*/
@@ -392,7 +398,9 @@ li {
     max-width: 15.5rem;
 }
 
-
+.fotosContacto {
+  text-align: center; 
+}
 
 #remerasContacto {
     width: 20rem;
@@ -403,4 +411,5 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    padding: 20px;
 }
