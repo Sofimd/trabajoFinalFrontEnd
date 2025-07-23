@@ -53,6 +53,8 @@ header ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    
 }
 
 ul {
@@ -212,14 +214,15 @@ li {
     font-size: 0.9rem;
 }
 
-
-/*productos*/
-
-/*
 .fotosRemeras {
     width: 10rem;
     padding: 20px;
 }
+
+/*productos*/
+
+/*
+
 
 .boxRemeras {
     display: flex;
